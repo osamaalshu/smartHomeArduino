@@ -4,9 +4,14 @@
 :Revision: version#
 :License: Public Domain
 
-= Project: {Project}
+= Project: {Smart Home Arduino App}
 
-Describe your project
+This project is a Smart Home Arduino application designed to monitor the internal room temperature using a sensor connected to the Arduino and fetch the external temperature via a weather API. Additionally, it integrates with an electricity tariff API to optimize energy consumption decisions.
+
+= Features
+- Internal Temperature Monitoring: Uses a sensor to read the room temperature.
+- External Weather API Integration: Fetches real-time external temperature.
+- Electricity Tariff Optimization: Connects to an electricity tariff API for cost-efficient energy 
 
 == Step 1: Installation
 Please describe the steps to install this project.
