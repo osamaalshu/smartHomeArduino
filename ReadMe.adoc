@@ -1,63 +1,92 @@
+Here’s the corrected and complete document in proper AsciiDoc format, ready for GitHub:
+
 :Author: oksalshuaili
-:Email:
+:Email: 
 :Date: 29/11/2024
-:Revision: version#
+:Revision: 1.0
 :License: Public Domain
 
-= Project: {Smart Home Arduino App}
+= Smart Home Arduino App
 
 This project is a Smart Home Arduino application designed to monitor the internal room temperature using a sensor connected to the Arduino and fetch the external temperature via a weather API. Additionally, it integrates with an electricity tariff API to optimize energy consumption decisions.
 
-= Features
-- Internal Temperature Monitoring: Uses a sensor to read the room temperature.
-- External Weather API Integration: Fetches real-time external temperature.
-- Electricity Tariff Optimization: Connects to an electricity tariff API for cost-efficient energy 
+== Features
+
+- **Internal Temperature Monitoring**: Uses a DS18B20 sensor to read the room temperature.
+- **External Weather API Integration**: Fetches real-time external temperature using OpenWeather API.
+- **Electricity Tariff Optimization**: Connects to the Octopus Energy tariff API for cost-efficient energy consumption.
 
 == Step 1: Installation
-Please describe the steps to install this project.
 
-For example:
+Follow these steps to install this project:
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+1. Clone the repository:
 
-== Step 2: Assemble the circuit
+git clone https://github.com//.git
+cd 
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+2. Install the required Arduino libraries:
+- `WiFiNINA` (for API integration)
+- `OneWire` and `DallasTemperature` (for the DS18B20 sensor)
 
-== Step 3: Load the code
+3. Open the Arduino IDE and load the provided `.ino` file.
 
-Upload the code contained in this sketch on to your board
+== Step 2: Assemble the Circuit
 
-=== Folder structure
+Assemble the circuit following the `layout.png` provided in the repository. For this setup:
 
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
+- Connect the DS18B20 sensor to the breadboard.
+- Wire the sensor as follows:
+- **VCC** to 3.3V on the Arduino.
+- **GND** to ground.
+- **DATA** to a digital pin (e.g., pin 2) with a 4.7k pull-up resistor.
+- Secure the sensor in place near the bedside table for consistent readings.
 
-=== License
-This project is released under a {License} License.
+== Step 3: Load the Code
 
-=== Contributing
-To contribute to this project please contact: 
+1. Open the `sketch.ino` file in the Arduino IDE.
+2. Configure the `arduino_secrets.h` file with your Wi-Fi and API credentials:
+```cpp
+#define SECRET_SSID "YourWiFiSSID"
+#define SECRET_PASS "YourWiFiPassword"
+#define WEATHER_API_KEY "YourOpenWeatherAPIKey"
+#define TARIFF_API_KEY "YourOctopusAPIKey"
 
-=== BOM
-Add the bill of the materials you need for this project.
+	3.	Select the appropriate board and COM port in the Arduino IDE.
+	4.	Upload the code to your Arduino board.
+
+== Folder Structure
+
+smart_home_arduino_app/       => Project root
+├── smart_home.ino            => Main Arduino sketch
+├── arduino_secrets.h         => Wi-Fi and API credentials
+├── layout.png                => Circuit layout diagram
+├── schematics.png            => (optional) Schematic diagram
+└── README.adoc               => This documentation file
+
+== License
+
+This project is released under the Public Domain License. You are free to use, modify, and distribute the code and materials.
+
+== Contributing
+
+To contribute to this project, please contact the author at the provided email or submit a pull request to the repository.
+
+== Bill of Materials (BOM)
 
 |===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
+| ID | Part Name            | Part Number   | Quantity
+| R1 | 4.7k Pull-Up Resistor | N/A          | 1
+| T1 | DS18B20 Temperature Sensor | DS18B20 | 1
+| A1 | WIFILoRA32V3 Arduino  | N/A          | 1
 |===
 
+== Help
 
-=== Help
-This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
-If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+This document is written in the AsciiDoc format, a lightweight markup language to describe technical documentation.
+
+For help with AsciiDoc, visit:
+	•	http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+	•	http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+
+This document is now formatted correctly for GitHub and includes all necessary details. Let me know if you need further assistance!
