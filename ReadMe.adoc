@@ -49,9 +49,9 @@ Assemble the circuit following the `layout.png` provided in the repository. For 
 #define SECRET_PASS "YourWiFiPassword"
 #define WEATHER_API_KEY "YourOpenWeatherAPIKey"
 #define TARIFF_API_KEY "YourOctopusAPIKey"
-
-	3.	Select the appropriate board and COM port in the Arduino IDE.
-	4.	Upload the code to your Arduino board.
+```
+3.Select the appropriate board and COM port in the Arduino IDE.
+4.Upload the code to your Arduino board.
 
 == Folder Structure
 
@@ -81,10 +81,3 @@ To contribute to this project, please contact the author at the provided email o
 
 == Help
 
-This document is written in the AsciiDoc format, a lightweight markup language to describe technical documentation.
-
-For help with AsciiDoc, visit:
-	•	http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-	•	http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
-
-This document is now formatted correctly for GitHub and includes all necessary details. Let me know if you need further assistance!
