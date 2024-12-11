@@ -18,16 +18,20 @@ This project is a Smart Home Arduino application designed to monitor the interna
 
 Follow these steps to install this project:
 
-1. Clone the repository:
+. Clone the repository:
++
+[source]
+----
+git clone https://github.com/<username>/<repository>.git
+cd <repository>
+----
 
-git clone https://github.com//.git
-cd 
-
-2. Install the required Arduino libraries:
+. Install the required Arduino libraries:
++
 - `WiFiNINA` (for API integration)
 - `OneWire` and `DallasTemperature` (for the DS18B20 sensor)
 
-3. Open the Arduino IDE and load the provided `.ino` file.
+. Open the Arduino IDE and load the provided `.ino` file.
 
 == Step 2: Assemble the Circuit
 
