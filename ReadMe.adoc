@@ -83,4 +83,8 @@ To contribute to this project, please contact the author at the provided email o
 |===
 
 == Help
+This document is written in the AsciiDoc format, a lightweight markup language to describe technical documentation.
 
+For help with AsciiDoc, visit:
+	•	http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+	•	http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
