@@ -55,12 +55,15 @@ Assemble the circuit following the `layout.png` provided in the repository. For 
 
 == Folder Structure
 
+[literal]
+----
 smart_home_arduino_app/       => Project root
 ├── smart_home.ino            => Main Arduino sketch
 ├── arduino_secrets.h         => Wi-Fi and API credentials
 ├── layout.png                => Circuit layout diagram
 ├── schematics.png            => (optional) Schematic diagram
 └── README.adoc               => This documentation file
+----
 
 == License
 
