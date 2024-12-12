@@ -62,10 +62,16 @@ Assemble the circuit following the `layout.png` provided in the repository. For 
 [literal]
 ----
 smart_home_arduino_app/       => Project root
-├── smart_home.ino            => Main Arduino sketch
 ├── arduino_secrets.h         => Wi-Fi and API credentials
-├── layout.png                => Circuit layout diagram
-├── schematics.png            => (optional) Schematic diagram
+├── consumption_temperature_data.csv => Processed dataset for consumption analysis
+├── data_analysis.ipynb       => Jupyter notebook for data analysis
+├── data_preprocessing.ipynb  => Jupyter notebook for data preprocessing
+├── file1.h                   => Header file for sleep data (not used in final project)
+├── iot_project_nov29a.ino    => Main Arduino sketch
+├── sketch.json               => Arduino project metadata
+├── temperature_sleep_data.csv => Dataset for sleep and temperature analysis
+├── temperature_tariff_data.csv => Dataset for temperature and tariff analysis
+├── thingProperties.h         => IoT device properties configuration
 └── README.adoc               => This documentation file
 ----
 
