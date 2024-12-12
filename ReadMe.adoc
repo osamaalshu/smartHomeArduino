@@ -6,13 +6,15 @@
 
 = Smart Home Arduino App
 
-This project is a Smart Home Arduino application designed to monitor the internal room temperature using a sensor connected to the Arduino and fetch the external temperature via a weather API. Additionally, it integrates with an electricity tariff API to optimize energy consumption decisions.
+This project is a Smart Home Arduino application designed to monitor the internal room temperature using a sensor connected to the Arduino and fetch the external temperature via a weather API. Additionally, the project incorporates sleep data analysis to evaluate the relationship between indoor/outdoor temperatures and sleep quality. It provides actionable insights into energy consumption patterns, helping to determine cost-efficient appliance usage times and optimal sleeping conditions.
 
 == Features
 
 - **Internal Temperature Monitoring**: Uses a DS18B20 sensor to read the room temperature.
 - **External Weather API Integration**: Fetches real-time external temperature using OpenWeather API.
 - **Electricity Tariff Optimization**: Connects to the Octopus Energy tariff API for cost-efficient energy consumption.
+- **Sleep Analysis**: Correlates indoor and outdoor temperature data with sleep patterns to identify optimal sleeping conditions.
+- **Energy Consumption Analysis**: Analyzes energy consumption patterns and identifies cost-efficient times to use household appliances based on electricity tariffs.
 
 == Step 1: Installation
 
