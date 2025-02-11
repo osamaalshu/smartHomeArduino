@@ -24,8 +24,7 @@ Follow these steps to install this project:
 +
 [source]
 ----
-git clone https://github.com/<username>/<repository>.git
-cd <repository>
+git clone https://github.com/osamaalshu/smartHomeArduino.git
 ----
 
 . Install the required Arduino libraries:
@@ -94,10 +93,3 @@ To contribute to this project, please contact the author at the provided email o
 | A1 | WIFILoRA32V3 Arduino  | N/A          | 1
 |===
 
-== Help
-
-This document is written in the _AsciiDoc_ format, a lightweight markup language to describe technical documentation.
-
-For help with AsciiDoc, visit:
-- http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-- http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
